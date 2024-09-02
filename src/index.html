@@ -7,33 +7,17 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <div class="main">
     <h1 class="mainHeading">Simulation</h1>
     <hr />
-    <div class="subHeading">Enter details :</div>
+    <h6 class="subHeading">Enter details :</h6>
     <label for="floorInput">Enter number of floors</label>
     <input type="number" name="floorCount" id="floorCount" />
     <label for="liftInput">Enter number of lifts</label>
     <input type="number" name="liftCount" id="liftCount" />
-    <button id="generateButton">Generate</button>
-    <div id="container1" style="display:flex;">
-      <div class="floorName">1</div>
-      <div class="liftButton">U</div>
-      <div class="liftButton">D</div>
-      <div class="lift">
-        <div class="liftDoorLeft">
-
-        </div>
-        <div class="liftDoorRight">
-          
-        </div>
-      </div>
-      <div class="lift"></div>
-      <div class="lift"></div>
-      <div class="lift"></div>
-    </div>
-    <hr>
-</div>
+    <button class="button" id="generateButton">Generate</button>
+    <button class="button" id="clearButton">Clear</button>
+    <hr id="final_hr" />
+    <div id="mainContainer"></div>
     <script src="js/main.js"></script>
   </body>
 </html>
